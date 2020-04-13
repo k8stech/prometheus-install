@@ -9,7 +9,7 @@ sudo touch /etc/blackbox/blackbox.yml
 sudo chown -R blackbox_exporter:blackbox_exporter /etc/blackbox
 
 # Download blackbox_exporter and copy utilities to where they should be in the filesystem
-#VERSION=0.12.0
+VERSION=0.16.0
 VERSION=$(curl https://raw.githubusercontent.com/prometheus/blackbox_exporter/master/VERSION)
 wget https://github.com/prometheus/blackbox_exporter/releases/download/v${VERSION}/blackbox_exporter-${VERSION}.linux-amd64.tar.gz
 tar xvzf blackbox_exporter-${VERSION}.linux-amd64.tar.gz
