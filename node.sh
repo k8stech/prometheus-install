@@ -4,7 +4,7 @@
 sudo adduser --no-create-home --disabled-login --shell /bin/false --gecos "Node Exporter User" node_exporter
 
 # Download node_exporter and copy utilities to where they should be in the filesystem
-#VERSION=0.16.0
+VERSION=0.17.0
 VERSION=$(curl https://raw.githubusercontent.com/prometheus/node_exporter/master/VERSION)
 wget https://github.com/prometheus/node_exporter/releases/download/v${VERSION}/node_exporter-${VERSION}.linux-amd64.tar.gz
 tar xvzf node_exporter-${VERSION}.linux-amd64.tar.gz
