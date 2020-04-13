@@ -14,7 +14,7 @@ sudo chown -R prometheus:prometheus /etc/prometheus
 sudo chown prometheus:prometheus /var/lib/prometheus
 
 # Download prometheus and copy utilities to where they should be in the filesystem
-#VERSION=2.2.1
+VERSION=2.17.0
 VERSION=$(curl https://raw.githubusercontent.com/prometheus/prometheus/master/VERSION)
 wget https://github.com/prometheus/prometheus/releases/download/v${VERSION}/prometheus-${VERSION}.linux-amd64.tar.gz
 tar xvzf prometheus-${VERSION}.linux-amd64.tar.gz
